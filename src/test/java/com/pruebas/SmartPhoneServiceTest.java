@@ -34,4 +34,14 @@ public class SmartPhoneServiceTest {
         assertThrows(IllegalArgumentException.class, () -> smartPhoneService.findOne(null));
     }
 
+    @Test
+    public void testCountAssertions() {
+        assertAll("count",
+                () -> assertNotNull(smartPhoneService.count()),
+                () -> assertTrue(smartPhoneService.count() > 0),
+                () -> assertEquals(3, smartPhoneService.count())
+        );
+    }
+
+
 }
