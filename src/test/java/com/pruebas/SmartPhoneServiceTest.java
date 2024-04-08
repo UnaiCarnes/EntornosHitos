@@ -28,4 +28,10 @@ public class SmartPhoneServiceTest {
     public void testCountEqualsThree() {
         assertEquals(3, smartPhoneService.count());
     }
+
+    @Test
+    public void testFindOneWithNullId() {
+        assertThrows(IllegalArgumentException.class, () -> smartPhoneService.findOne(null));
+    }
+
 }
