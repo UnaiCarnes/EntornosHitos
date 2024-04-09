@@ -42,4 +42,6 @@ public class SmartPhoneServiceTest {
                 () -> assertEquals(3, smartPhoneService.count())
         );
     }
+
+    //Las funciones lambda en Java se utilizan para proporcionar una forma concisa de expresar comportamientos sin la necesidad de definir una clase anónima o implementar una interfaz funcional.
 }
