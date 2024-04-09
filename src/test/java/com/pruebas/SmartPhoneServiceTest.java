@@ -1,10 +1,9 @@
 package com.pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import com.example.demo.service.SmartPhoneServiceImpl;
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import com.example.demo.service.SmartPhoneService;
 
 public class SmartPhoneServiceTest {
