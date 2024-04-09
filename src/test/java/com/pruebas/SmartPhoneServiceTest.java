@@ -43,4 +43,5 @@ public class SmartPhoneServiceTest {
     }
 
     //Las funciones lambda en Java se utilizan para proporcionar una forma concisa de expresar comportamientos sin la necesidad de definir una clase anónima o implementar una interfaz funcional.
+    //@BeforeEach y @AfterEach son anotaciones utilizadas en JUnit para especificar métodos que se ejecutan antes y después de cada método de prueba en una clase de prueba, respectivamente. Pueden ser útiles para configurar el estado inicial y limpiar el estado después de cada prueba. En este caso no se utilizan ya que no hay que iniciar nada antes o despues de cada prueba.
 }
