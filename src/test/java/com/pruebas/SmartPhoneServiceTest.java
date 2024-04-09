@@ -1,6 +1,7 @@
 package com.pruebas;
 
 import static org.junit.jupiter.api.Assertions.*;
+
 import com.example.demo.service.SmartPhoneServiceImpl;
 import com.example.demo.service.SmartPhoneService;
 import org.junit.Test;
@@ -27,7 +28,7 @@ public class SmartPhoneServiceTest {
     }
 
     @DisplayName("El valor devuelto por count() debe ser 3")
-    @Test
+    @Test //Este test va a fallar si cambiamos el numero 3 a 4
     public void testCountEqualsThree() {
         assertEquals(3, smartPhoneService.count());
     }
