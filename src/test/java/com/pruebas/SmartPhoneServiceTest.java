@@ -5,6 +5,7 @@ import com.example.demo.service.SmartPhoneServiceImpl;
 import com.example.demo.service.SmartPhoneService;
 import org.junit.Test;
 import org.junit.Before;
+import org.junit.jupiter.api.DisplayName;
 
 public class SmartPhoneServiceTest {
 
@@ -13,26 +14,31 @@ public class SmartPhoneServiceTest {
     public void setUp() {
         smartPhoneService = new SmartPhoneServiceImpl();
     }
+    @DisplayName("El método count() no debe devolver NULL")
     @Test
     public void testCountNotNull() {
         assertNotNull(smartPhoneService.count());
     }
 
+    @DisplayName("El valor devuelto por count() debe ser mayor que 0")
     @Test
     public void testCountGreaterThanZero() {
         assertTrue(smartPhoneService.count() > 0);
     }
 
+    @DisplayName("El valor devuelto por count() debe ser 3")
     @Test
     public void testCountEqualsThree() {
         assertEquals(3, smartPhoneService.count());
     }
 
+    @DisplayName("El método findOne() debe lanzar IllegalArgumentException cuando se pasa un ID nulo")
     @Test
     public void testFindOneWithNullId() {
         assertThrows(IllegalArgumentException.class, () -> smartPhoneService.findOne(null));
     }
 
+    @DisplayName("Las aserciones de count() deben ejecutarse independientemente")
     @Test
     public void testCountAssertions() {
         assertAll("count",
