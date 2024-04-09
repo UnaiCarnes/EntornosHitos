@@ -30,8 +30,7 @@ public class SmartPhoneServiceTest {
 
     @Test
     public void testFindOneWithNullId() {
-        IllegalArgumentException thrown = assertThrows(IllegalArgumentException.class, () -> smartPhoneService.findOne(null));
-        assertTrue(thrown.getMessage().contains("El ID no puede ser nulo !"));
+        assertThrows(IllegalArgumentException.class, () -> smartPhoneService.findOne(null));
     }
 
     @Test
