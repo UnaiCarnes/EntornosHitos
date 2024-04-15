@@ -54,7 +54,6 @@ public class SmartPhoneServiceTest {
     //public class SmartPhoneServiceTest {
     //@BeforeAll y @AfterAll son anotaciones utilizadas en JUnit para especificar métodos que se ejecutan una vez antes y después de todos los métodos de prueba en una clase de prueba, respectivamente. Pueden ser útiles para configurar el estado inicial una vez y limpiar después de todas las pruebas.
     //@TestMethodOrder es una anotación que permite especificar el orden en el que se deben ejecutar los métodos de prueba en una clase de prueba. Puede ser útil cuando el orden de ejecución de las pruebas es importante, lo cual es raro pero puede ser necesario en algunos casos.
-    //
     //@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
     //public class SmartPhoneServiceTest {
     //    private SmartPhoneService smartPhoneService;
